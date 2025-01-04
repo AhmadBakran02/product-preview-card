@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    width: 340px;
+    height: 600px;
+    border-radius: 9px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.imgborder {
+    overflow: hidden;
+    width: 100%;
+}
+
+.image {
+    content: url(https://i.suar.me/m5PmP/m);
+    width: 100%;
+    transition: 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1) rotate(3deg) translateY(4px);
+}
+
+h4 {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-top: 15px
+}
+
+h2 {
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h2 + p {
+    color: hsl(228, 12%, 48%);
+    width: 97%;
+    line-height: 23px
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start; 
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.price {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 1.3rem
+}
+
+.new {
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    font-family: "Fraunces", serif;
+    font-weight: 700
+}
+
+.old {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through
+}
+
+button {
+    align-self: center;
+    background-color: hsl(158, 36%, 37%);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    height: 50px;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: 700;
+    width: 100%;
+    transition: background-color 0.3s
+}
+
+button:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: hsl(157, 38%, 23%)
+}
+
+@media (max-width:355px) {
+    .box {
+        width: 260px;
+        height: 450px;
+    }
+
+    .text {
+        justify-content: start;
+        align-content: start;
+        gap: 10px;
+    }
+
+    h4 {
+        font-size: .7rem;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    h2 + p {
+        font-size: 0.7rem;
+        line-height: 17px;
+    }
+
+    .new {
+        font-size: 1.2rem;
+    }
+
+    .old {
+        font-size: 0.7rem;
+    }
+
+    button {
+        height: 33px;
+    }
+}
+
+@media (min-width:750px){
+    .box {
+        width: 735px;
+        height: 520px;
+        display: flex
+    }
+
+    .image {
+        content: url(https://i.suar.me/K4qKz/m);
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 32px
+    }
+
+    h2 + p {
+        font-size: 16px;
+        line-height: 29px
+    }
+    .new {
+        font-size: 35px
+    }
+
+    .old {
+        font-size: 17px
+    }
+
+    .text {
+        gap: 2rem
+    }
+}
